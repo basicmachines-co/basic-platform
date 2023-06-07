@@ -17,6 +17,14 @@ test = ["anyio[trio]", "coverage[toml] (>=4.5)", "hypothesis (>=4.0)", "mock (>=
 trio = ["trio (<0.22)"]
 
 [[package]]
+name = "asgi-htmx"
+version = "0.1.0"
+description = "HTMX integration for ASGI applications."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
 name = "click"
 version = "8.1.3"
 description = "Composable command line interface toolkit"
@@ -234,12 +242,16 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "612cd5ebdca875de3fdf32d8184f7a1600957f45ff1ec9087c2a2fcb4ef8e561"
+content-hash = "0600a663f0b5902cc2459995ed204acdf77c0e80248f16bc481c5cc05d2e082f"
 
 [metadata.files]
 anyio = [
     {file = "anyio-3.7.0-py3-none-any.whl", hash = "sha256:eddca883c4175f14df8aedce21054bfca3adb70ffe76a9f607aef9d7fa2ea7f0"},
     {file = "anyio-3.7.0.tar.gz", hash = "sha256:275d9973793619a5374e1c89a4f4ad3f4b0a5510a2b5b939444bee8f4c4d37ce"},
+]
+asgi-htmx = [
+    {file = "asgi-htmx-0.1.0.tar.gz", hash = "sha256:3c6cb1419f05d53ea593bfe684c88b4941b22063c7628720ec99de9197587623"},
+    {file = "asgi_htmx-0.1.0-py3-none-any.whl", hash = "sha256:622a98b5c31a8b9857de6a5a9cd97d584b0ee21b88e0a8a56dc237d172b75c9b"},
 ]
 click = [
     {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"},

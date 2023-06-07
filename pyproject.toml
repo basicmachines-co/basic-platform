@@ -11,6 +11,7 @@ python = "^3.10"
 jinja2 = "^3.1.2"
 fastapi = "^0.96.0"
 uvicorn = {extras = ["standard"], version = "^0.22.0"}
+asgi-htmx = ">=0.1.0,<0.2.0"
 
 
 [build-system]

@@ -15,7 +15,18 @@
         <p class="subtitle">
             My first website with <strong>Bulma</strong>!
         </p>
+
+        <button
+                id="clickme"
+                hx-get="{{ url_for('result') }}"
+                hx-target="this"
+                hx-swap="outerHTML"
+        >
+            Click Me!
+        </button>
+
     </div>
 </section>
+<script src="{{ url_for('static', path='js/htmx.min.js') }}" defer></script>
 </body>
 </html>
