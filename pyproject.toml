@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "basic-api"
+version = "0.1.0"
+description = ""
+authors = ["phernandez <phernandez@basicmachines.co>"]
+readme = "README.md"
+packages = [{include = "basic_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jinja2 = "^3.1.2"
+fastapi = "^0.96.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
