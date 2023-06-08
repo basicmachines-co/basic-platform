@@ -20,7 +20,7 @@ async def index(request: Request):
 
 @app.get("/result", name="result")
 async def result(request: Request) -> Response:
-    assert (htmx := request.scope["htmx"])
+    assert request.scope["htmx"] is not None
     template = "partials/result.html"
-    context = {"request": request, "table": [{"name":"foo", "value": "bar"}]}
+    context = {"request": request, "table": [{"name": "foo", "value": "bar"}]}
     return templates.TemplateResponse(template, context)
