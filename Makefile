@@ -46,4 +46,4 @@ build: format lint toml-sort ## Builds project
 
 .PHONY: run-dev
 run-dev: ## Runs the local dev server via poetry
-	@poetry run uvicorn basic-api.main:app --reload --host 127.0.0.1
+	@poetry run uvicorn basic_api.main:app --reload --host 127.0.0.1
