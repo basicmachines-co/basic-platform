@@ -62,7 +62,8 @@ jobs:
       #----------------------------------------------
       #       Build docker container
       #----------------------------------------------
-      - name: Build docker container
-        id: build-docker-continer
+      - name: Setup buildpacks
+        id: setup-buildpacks
         uses: buildpacks/github-actions/setup-pack@v5.0.0
+      - name: Build docker container
         run: make build-docker
