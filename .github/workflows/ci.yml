@@ -58,3 +58,11 @@ jobs:
 
       - name: Code Quality
         run: poetry run black . --check
+
+      #----------------------------------------------
+      #       Build docker container
+      #----------------------------------------------
+      - name: Build docker container
+        id: build-docker-continer
+        uses: buildpacks/github-actions/setup-pack@v5.0.0
+        run: make build-docker
